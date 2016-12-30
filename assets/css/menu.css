@@ -1,0 +1,100 @@
+﻿.menu {
+  display: block;
+  left: 335px;
+  position: absolute;
+  top: 80px;
+  width: 914px;
+}
+
+  .menu > DIV {
+    background: url('../img/layout/menu-bg.jpg') left bottom no-repeat;
+    height: 22px;
+  }
+
+  .menu > UL {
+    /*background-color: orange;*/
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu LI {
+    display: block;
+    float: left;
+    height: 65px;
+    list-style-type: none;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+  }
+
+    .menu LI.menu__spacer {
+      background: url('../img/layout/menu-spacer.png') center 33px no-repeat;
+      width: 54px;
+      height: 65px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu LI A,
+    .menu LI SPAN {
+      /*background-color: greenyellow;*/
+      color: #FFF;
+      display: block;
+      font-size: 14pt;
+      font-weight: 300;
+      height: 26px;
+      line-height: 26px;
+      margin: 25px 0 0;
+      text-decoration: none;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+      .menu LI A:hover {
+        text-decoration: underline;
+      }
+
+    .menu LI.active A,
+    .menu LI.active SPAN {
+      margin-top: 0;
+    }
+
+    .menu LI.active VAR {
+      background: url('../img/layout/menu-bg.jpg') no-repeat;
+      display: block;
+      height: 61px;
+    }
+
+  .menu .menu__index {
+    margin-left: 40px;
+    width: 130px;
+  }
+
+    .menu .menu__index.active VAR {
+      background-position: -40px bottom;
+    }
+
+  .menu .menu__holiday {
+    width: 280px;
+  }
+
+    .menu .menu__holiday.active VAR {
+      background-position: -224px bottom;
+    }
+
+  .menu .menu__decor {
+    width: 80px;
+  }
+
+    .menu .menu__decor.active VAR {
+      background-position: -558px bottom;
+    }
+
+  .menu .menu__contacts {
+    width: 150px;
+  }
+
+    .menu .menu__contacts.active VAR {
+      background-position: -692px bottom;
+    }

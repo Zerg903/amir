@@ -1,0 +1,266 @@
+﻿
+/* Layout
+   ========================================================================== */
+
+.page-back {
+  background-color: #e6e5e1;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-image: url('../img/layout/body-bg-wide.jpg');
+}
+
+@media only screen and (max-device-width : 1600px) {
+  .page-back {
+    background-image: url('../img/layout/body-bg-normal.jpg');
+  }
+}
+
+@media only screen and (max-device-width : 1280px) {
+  .page-back {
+    background-image: url('../img/layout/body-bg-narrow.jpg');
+  }
+}
+
+.page-back .page-back {
+  background-color: #e6e5e1;
+}
+
+.page-back.page-frame {
+  min-height: 700px;
+}
+
+.page-frame {
+  margin: 0 auto;
+  width: 1250px;
+}
+
+.page-menu {
+  margin-bottom: 2.5em;
+}
+
+.page-menu__item,
+.page-menu__item:hover,
+.page-menu__item:active,
+.page-menu__item:focus {
+  display: inline-block;
+  margin: 0 .4em;
+  padding: 0;
+  color: #000;
+}
+
+.text-offset {
+  display: inline-block;
+  margin-left: 2em;
+}
+
+.text-strong {
+  color: black;
+  font-weight: 700;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.row {
+  display: block;
+  margin: 0 60px 0 5px;
+}
+
+.row__btm_offset {
+  margin-bottom: 80px;
+}
+
+.row__btm_offset_large {
+  margin-bottom: 160px;
+}
+
+.row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.col-1,
+.col-2,
+.col-3 {
+  float: left;
+  margin: 0 0 0 55px;
+}
+
+  .col-1 *:first-child,
+  .col-2 *:first-child,
+  .col-3 *:first-child {
+    margin-top: 0;
+  }
+
+
+.col-1 {
+  width: 340px;
+}
+
+.col-3 {
+  width: 1130px;
+}
+
+.col-2 {
+  width: 735px;
+}
+
+/* Header
+   ========================================================================== */
+
+header {
+  min-height: 270px;
+  position: relative;
+}
+
+.logo {
+  display: block;
+  position: absolute;
+  background: url('../img/layout/logo.png') center center no-repeat;
+  top: 21px;
+  left: 58px;
+  width: 256px;
+  height: 210px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.contacts {
+  width: 833px;
+  top: 16px;
+  left: 335px;
+  display: block;
+  position: absolute;
+  opacity: .6;
+  text-align: right;
+}
+
+/* Footer
+   ========================================================================== */
+
+FOOTER {
+  background-color: #000;
+}
+
+.cdata {
+  font-size: 82%;
+  line-height: 2.6em;
+  color: #FFF;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.cdata_org {
+  display: none;
+}
+
+.cdata_phone {
+  white-space: nowrap;
+}
+
+.cdata_mail {
+  display: inline-block;
+  white-space: nowrap;
+  padding-left: 1.6em;
+}
+
+.cdata A {
+  color: #FFF;
+  text-decoration: none;
+}
+
+  .cdata A:hover,
+  .cdata A:active,
+  .cdata A:focus {
+    text-decoration: underline;
+  }
+
+/* Content
+   ========================================================================== */
+
+.lacings {
+  display: inline-block;
+  margin-left: 2em;
+}
+
+.lacing-1 {
+  display: inline-block;
+  width: 51px;
+  height: 42px;
+  background: url('../img/layout/lacing-1.png') no-repeat;
+  vertical-align: middle;
+  margin: 0 .3em;
+}
+
+.picture {
+  display: block;
+  width: 340px;
+  height: 340px;
+  position: relative;
+}
+
+  .picture:hover,
+  .picture:active,
+  .picture:focus {
+    text-decoration: none;
+  }
+
+  .picture IMG {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 340px;
+    height: 340px;
+  }
+
+  .picture .picture__frame {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 340px;
+    height: 340px;
+    background: url('../img/layout/img-frame.png');
+  }
+
+  .picture .picture__label {
+    position: absolute;
+    z-index: 3;
+    top: 276px;
+    left: 0;
+    display: block;
+    width: 340px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: #242323;
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+
+.picture__label__price {
+  font-size: 2em;
+  vertical-align: middle;
+}
+
+
+.offer-title {
+  display: block;
+  font-size: 1.2em;
+  font-weight: 700;
+  line-height: 1em;
+  margin-top: 0;
+  margin-bottom: 1.3em;
+}
+
+.offer-text {
+}
+
+.contact-image {
+  background: url('../img/layout/bag.png') no-repeat;
+}
