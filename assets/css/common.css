@@ -3,7 +3,7 @@
    ========================================================================== */
 
 .page-back {
-  background-color: #e6e5e1;
+  background-color: #dbdddd;
   background-position: top center;
   background-repeat: no-repeat;
   background-image: url('../img/layout/body-bg-wide.jpg');
@@ -68,7 +68,7 @@
 }
 
 .row__btm_offset {
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 
 .row__btm_offset_large {
